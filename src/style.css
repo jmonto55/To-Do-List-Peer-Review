@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:
+    "Open Sans",
+    "Lucida Grande",
+    "tahoma",
+    "verdana",
+    "arial",
+    sans-serif;
+  color: #f5f5f5;
+}
+
+body {
+  background: #101010;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  box-shadow: 0 0 24px -4px rgba(143, 143, 143, 10);
+}
+
+header {
+  width: 60vw;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid grey 1px;
+  padding: 15px;
+}
+
+.tasks_list {
+  width: 60vw;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.main_title {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.task_container {
+  width: 60%;
+  display: flex;
+}
+
+.task_container input {
+  margin-right: 10px;
+}
+
+.task_textarea {
+  outline: none;
+  background: #101010;
+  border: none;
+  font-size: 1rem;
+}
+
+input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.141);
+}
+
+.task_textarea::-webkit-input-placeholder {
+  color: #f5f5f5;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  border-bottom: solid grey 1px;
+  padding: 15px;
+}
+
+.add_task {
+  padding: 15px;
+  display: flex;
+  border-bottom: solid grey 1px;
+  justify-content: space-between;
+}
+
+.add_to_list {
+  border: none;
+  font-size: 1rem;
+  font-style: italic;
+  outline: none;
+  background: #101010;
+}
+
+.task {
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.clear_tasks {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(34, 34, 34);
+  border: none;
+}
+
+.clear_all {
+  background: inherit;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  width: 90%;
+  height: 100%;
+  cursor: pointer;
+  transition: ease-in all 0.1s;
+  padding: 15px;
+}
+
+.clear_all:hover {
+  transform: scale(1.05);
+  color: silver;
+}
+
+.material-symbols-outlined {
+  color: silver;
+  cursor: pointer;
+  transition: ease-in all 0.1s;
+}
+
+.material-symbols-outlined:hover {
+  transform: scale(1.05);
+  color: rgb(120, 120, 120);
+}
+
+.to_do_input {
+  cursor: pointer;
+}
+
+.line_through::-webkit-input-placeholder {
+  color: rgb(120, 120, 120);
+  text-decoration: line-through;
+}
